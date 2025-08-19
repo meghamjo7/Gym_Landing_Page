@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Momentum Gym</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js" defer></script>
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Momentum Gym</h1>
+        <p>You're One Step Away from a Healthier, Stronger You!</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Choose Your Membership Plan</h2>
+            <div class="pricing">
+                <div class="plan">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Monthly Membership</h3>
+                    <p>$50/month</p>
+                    <button>Select Plan</button>
+                </div>
+                <div class="plan featured">
+                    <i class="fas fa-crown"></i>
+                    <h3>Annual Membership</h3>
+                    <p>$500/year</p>
+                    <small>Get 2 months free!</small>
+                    <button>Select Plan</button>
+                </div>
+                <div class="plan">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>Personal Training Package</h3>
+                    <p>Starting at $200 for 10 sessions</p>
+                    <button>Select Plan</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <h2>Why Join MomentumGym?</h2>
+            <ul>
+                <li><i class="fas fa-check"></i> State-of-the-Art Equipment</li>
+                <li><i class="fas fa-check"></i> Certified Trainers</li>
+                <li><i class="fas fa-check"></i> Unlimited Classes</li>
+                <li><i class="fas fa-check"></i> 24/7 Access</li>
+                <li><i class="fas fa-check"></i> Supportive Fitness Community</li>
+            </ul>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Members Say</h2>
+            <blockquote>
+                <p>"Joining MomentumGym has been life-changing! The trainers are amazing, and the community is so welcoming."</p>
+                - Sarah B.
+            </blockquote>
+        </section>
+
+        <section class="signup">
+            <h2>Sign Up Now</h2>
+            <form action="/submit-signup" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="membership-plan">Choose Your Membership Plan:</label>
+                    <select id="membership-plan" name="membership-plan">
+                        <option value="monthly">Monthly - $50/month</option>
+                        <option value="annual">Annual - $500/year</option>
+                        <option value="personal">10 sessions - $200/Starting</option>
+                    </select>
+                </div>
+                <button type="submit">Sign Up Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Have questions? Call us at (555) 123-4567 or email us at info@MomentumGym.com</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('services.png');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.header-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.gym-heading h1 {
+    color: #ff6b6b;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+    transform: scale(1.05);
+}
+
+.nav-button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Specific button colors */
+.nav-button:nth-child(1) { /* Home button */
+    background-color: #3498db;
+}
+.nav-button:nth-child(1):hover {
+    background-color: #00a10b;
+}
+
+.nav-button:nth-child(2) { /* About button */
+    background-color: #2ecc71;
+}
+.nav-button:nth-child(2):hover {
+    background-color: #b9d614;
+}
+
+.nav-button:nth-child(3) { /* Services button */
+    background-color: #4ecdc4;
+}
+.nav-button:nth-child(3):hover {
+    background-color: #4638c3;
+}
+
+.nav-button:nth-child(4) { /* Contact Us button */
+    background-color: #e74c3c;
+}
+.nav-button:nth-child(4):hover {
+    background-color: #237bc8;
+}
+
+.nav-button:nth-child(5) { /* Join Now button */
+    background-color: #f39c12;
+}
+.nav-button:nth-child(5):hover {
+    background-color: #d35400;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #ffd700;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #f0f0f0;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: translateX(10px);
+}
+
+.highlight {
+    color: #4ecdc4;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #f0f0f0;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .nav-buttons {
+        flex-direction: column;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+}

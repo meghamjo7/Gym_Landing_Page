@@ -1,0 +1,169 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+header {
+  background-color: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+h2 {
+  color: #0066cc;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 0.5rem;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.plan {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.plan.featured {
+  border: 2px solid #0066cc;
+}
+
+.plan i {
+  font-size: 3rem;
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+.plan h3 {
+  margin-top: 0;
+}
+
+.plan button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plan button:hover {
+  background-color: #004c99;
+}
+
+.benefits ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefits li {
+  margin-bottom: 0.5rem;
+}
+
+.benefits i {
+  color: #0066cc;
+  margin-right: 0.5rem;
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  border-left: 4px solid #0066cc;
+  padding-left: 1rem;
+  margin-left: 0;
+}
+
+.signup form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup button:hover {
+  background-color: #004c99;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .pricing {
+      flex-direction: column;
+  }
+  
+  .plan {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+}
